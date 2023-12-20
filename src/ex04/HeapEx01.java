@@ -16,6 +16,7 @@ class Cat {
 
 public class HeapEx01 {
     public static void main(String[] args) {
+        // 망함
         Cat c = new Cat();
         System.out.println(c.name);
     }
