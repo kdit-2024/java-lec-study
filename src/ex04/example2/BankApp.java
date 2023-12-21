@@ -19,21 +19,7 @@ public class BankApp {
         long amount = 100L;
 
         // 4. 이체 (ssar -> cos 100원)
-        BankService.이체(ssarAccount, cosAccount, amount);
-
-        // 5. 이체 (ssar -> love 100원)
-        BankService.이체(ssarAccount, loveAccount, amount);
-
-        // 6. 이체 (cos -> love 100원)
-        BankService.이체(cosAccount, loveAccount, amount);
-
-        // 7. 객체 상태 확인
-        System.out.println(ssarAccount);
-        System.out.println(cosAccount);
-        System.out.println(loveAccount);
-
-        // 8. 출금
         BankService.출금(ssarAccount, amount);
-        BankService.출금(loveAccount, amount);
+
     }
 }
