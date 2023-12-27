@@ -36,7 +36,6 @@ interface Remocon {
 /**
  * 작성자 : 홍길동
  * 날짜 : 2023.12.26
- * 구현체 : SamsungRemocon, LgRemocon
  */
 class CommonRemocon {
     // [Remocon <-, SamsungRemocon]
