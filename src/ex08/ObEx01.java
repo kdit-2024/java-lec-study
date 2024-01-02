@@ -43,11 +43,6 @@ public class ObEx01 {
             System.out.println("가타요?");
         }
 
-        String s1 = new String("물");
-        String s2 = new String("물");
-
-
-        System.out.println(s1.equals(s2));
 
     }
 }
