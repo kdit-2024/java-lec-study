@@ -19,7 +19,11 @@ public class BankApp {
         long amount = 100L;
 
         // 4. 이체 (ssar -> cos 100원)
-        BankService.출금(ssarAccount, amount);
+        try {
+            BankService.출금(ssarAccount, amount);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
     }
 }

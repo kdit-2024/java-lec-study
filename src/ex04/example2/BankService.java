@@ -5,14 +5,12 @@ import ex04.example2.model.Account;
 // 트랜잭션 관리
 public class BankService {
 
-    public static void 출금(Account withdrawAccount, long amount) {
+    public static void 출금(Account withdrawAccount, long amount) throws Exception {
         if (amount < 0) {
-            System.out.println("0원 이하 금액을 출금할 수 없습니다.");
-            return;
+            throw new RuntimeException("0원 이하 금액을 출금할 수 없습니다.");
         }
         if (withdrawAccount.잔액부족하니(amount)) {
-            System.out.println("잔액이 부족합니다");
-            return;
+            throw new RuntimeException("잔액이 부족합니다");
         }
         withdrawAccount.출금(amount);
     }
