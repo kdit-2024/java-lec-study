@@ -14,6 +14,10 @@ public class StarApp {
         River r1 = new River("r1"); // [River, Protoss]
         Dark dark1 = new Dark("dark1"); // [Dark, Protoss]
         Carrier c1 = new Carrier("c1");
+        Scout s1 = new Scout("s1");
+
+        gameStart(z1, s1);
+        gameStart(s1, dark1);
 
         gameStart(z1, d1);
         gameStart(dark1, d1);
